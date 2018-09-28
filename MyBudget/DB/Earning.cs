@@ -20,14 +20,11 @@ namespace MyBudget
 
         [Required]
         public DateTime DateEarning { get; set; }
-
-        [Required]
-        public string EarningsCategoryId { get; set; }
-
+        
         [Required]
         public double Sum { get; set; }
         public string Description { get; set; }
-
+        //public int EarningsCategoryId { get; set; }
         [Required]
         public virtual EarningsCategory EarningsCategory { get; set; }
     }

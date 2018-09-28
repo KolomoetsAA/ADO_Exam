@@ -64,6 +64,12 @@
     <Compile Include="DB\MyBudgetContext.cs" />
     <Compile Include="DB\Product.cs" />
     <Compile Include="DB\SpendingsCategory.cs" />
+    <Compile Include="EarningsSpendingsAddForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EarningsSpendingsAddForm.Designer.cs">
+      <DependentUpon>EarningsSpendingsAddForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -75,6 +81,9 @@
     <Compile Include="DB\Spending.cs" />
     <EmbeddedResource Include="CategoryEditForm.resx">
       <DependentUpon>CategoryEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EarningsSpendingsAddForm.resx">
+      <DependentUpon>EarningsSpendingsAddForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

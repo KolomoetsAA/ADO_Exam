@@ -25,12 +25,13 @@ namespace MyBudget
             dataGridView_Earnings.DataSource = FillEarnings(db);
             dataGridView_Spendings.DataSource = FillSpendings(db);
 
-            lbl_Balance.Text = GetBalance().ToString(); // тут доделать!
+            Balance();
         }
 
-        private double GetBalance()
+        private void Balance()
         {
-            return 0;
+            lbl_Balance.Text = ((from ern in db.Earnings select ern.Sum).Sum() - (from spd in db.Spendings select spd.Sum).Sum()).ToString() + " $";
+            
         }
 
         private object FillSpendings(MyBudgetContext db)
@@ -40,8 +41,8 @@ namespace MyBudget
             {
                 Id = s.Id,
                 Date = s.DateSpending,
-                Category = s.SpendingsCategory,
-                Product = s.Product,
+                Category = s.SpendingsCategory.Name,
+                Product = s.Product.Name,
                 Sum = s.Sum,
                 Description = s.Description
 
@@ -56,7 +57,7 @@ namespace MyBudget
             {
                 Id = e.Id,
                 Date = e.DateEarning,
-                Category = e.EarningsCategory,
+                Category = e.EarningsCategory.Name,
                 Sum = e.Sum,
                 Description = e.Description
 
@@ -71,12 +72,23 @@ namespace MyBudget
 
         private void spendingsAddToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EarningsSpendingsAddForm AddForm = new EarningsSpendingsAddForm(false);
+            AddForm.ShowDialog();
 
+            dataGridView_Spendings.DataSource = null;
+            dataGridView_Spendings.DataSource = FillSpendings(db);
+            Balance();
         }
 
         private void earningAddToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            EarningsSpendingsAddForm AddForm = new EarningsSpendingsAddForm(true);
+            AddForm.ShowDialog();
 
+            dataGridView_Earnings.DataSource = null;
+            dataGridView_Earnings.DataSource = FillEarnings(db);
+            Balance();
+            
         }
 
         private void spendingsCategoryEditToolStripMenuItem_Click(object sender, EventArgs e)

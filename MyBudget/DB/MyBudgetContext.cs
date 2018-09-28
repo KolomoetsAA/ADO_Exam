@@ -19,7 +19,7 @@ namespace MyBudget
             ////создает биби если она изменилась
             //Database.SetInitializer<MyBudgetContext>(new DropCreateDatabaseIfModelChanges<MyBudgetContext>());
             ////создает биби если ее нет
-             Database.SetInitializer<MyBudgetContext>(new CreateDatabaseIfNotExists<MyBudgetContext>());
+            Database.SetInitializer<MyBudgetContext>(new CreateDatabaseIfNotExists<MyBudgetContext>());
         }
 
         public DbSet<EarningsCategory> EarningsCategories { get; set; }

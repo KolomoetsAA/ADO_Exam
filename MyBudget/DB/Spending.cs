@@ -21,11 +21,8 @@ namespace MyBudget
         [Required]
         public DateTime DateSpending { get; set; }
 
-        [Required]
-        public string SpendingsCategoryId { get; set; }
-
-        [Required]
-        public string ProductId { get; set; }
+        //[Required]
+        //public string ProductId { get; set; }
 
         [Required]
         public double Sum { get; set; }

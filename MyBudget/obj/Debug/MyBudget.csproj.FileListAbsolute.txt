@@ -1,0 +1,16 @@
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\MyBudget.exe.config
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\MyBudget.exe
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\MyBudget.pdb
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\EntityFramework.dll
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\EntityFramework.SqlServer.dll
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\EntityFramework.xml
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\bin\Debug\EntityFramework.SqlServer.xml
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.csprojAssemblyReference.cache
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.Form1.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.Properties.Resources.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.csproj.GenerateResource.cache
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.csproj.CoreCompileInputs.cache
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.csproj.CopyComplete
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.exe
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.pdb
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.CategoryEditForm.resources

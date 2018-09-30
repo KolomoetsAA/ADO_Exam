@@ -29,3 +29,8 @@ D:\_SRPO\Kolomoets\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.csproj.GenerateR
 D:\_SRPO\Kolomoets\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.exe
 D:\_SRPO\Kolomoets\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.pdb
 D:\_SRPO\Kolomoets\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.EarningsSpendingsAddForm.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.AboutForm.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.EarningsSpendingsAddForm.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.TaskForm.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.FilterForm.resources
+D:\ШАГ\ADO.NET\ADO_Exam\MyBudget\obj\Debug\MyBudget.StatisticsForm.resources

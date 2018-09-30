@@ -48,6 +48,9 @@
             this.dataGridView_Spendings = new System.Windows.Forms.DataGridView();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dataGridView_Earnings = new System.Windows.Forms.DataGridView();
+            this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.statisticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.filterToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -62,6 +65,7 @@
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.addToolStripMenuItem,
             this.editToolStripMenuItem,
+            this.optionsToolStripMenuItem,
             this.helpToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -84,27 +88,27 @@
             this.earningToolStripMenuItem,
             this.spendingsToolStripMenuItem});
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(119, 22);
             this.addToolStripMenuItem1.Text = "Add...";
             // 
             // earningToolStripMenuItem
             // 
             this.earningToolStripMenuItem.Name = "earningToolStripMenuItem";
-            this.earningToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.earningToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.earningToolStripMenuItem.Text = "Earnings";
             this.earningToolStripMenuItem.Click += new System.EventHandler(this.earningAddToolStripMenuItem_Click);
             // 
             // spendingsToolStripMenuItem
             // 
             this.spendingsToolStripMenuItem.Name = "spendingsToolStripMenuItem";
-            this.spendingsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.spendingsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.spendingsToolStripMenuItem.Text = "Spendings";
             this.spendingsToolStripMenuItem.Click += new System.EventHandler(this.spendingsAddToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(119, 22);
             this.exitToolStripMenuItem.Text = "Exit";
             this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
@@ -122,20 +126,20 @@
             this.earningsToolStripMenuItem,
             this.spendingsToolStripMenuItem1});
             this.earnToolStripMenuItem.Name = "earnToolStripMenuItem";
-            this.earnToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.earnToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.earnToolStripMenuItem.Text = "Categories";
             // 
             // earningsToolStripMenuItem
             // 
             this.earningsToolStripMenuItem.Name = "earningsToolStripMenuItem";
-            this.earningsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.earningsToolStripMenuItem.Size = new System.Drawing.Size(147, 22);
             this.earningsToolStripMenuItem.Text = "Earnings";
             this.earningsToolStripMenuItem.Click += new System.EventHandler(this.earningsCategoryEditToolStripMenuItem_Click);
             // 
             // spendingsToolStripMenuItem1
             // 
             this.spendingsToolStripMenuItem1.Name = "spendingsToolStripMenuItem1";
-            this.spendingsToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.spendingsToolStripMenuItem1.Size = new System.Drawing.Size(147, 22);
             this.spendingsToolStripMenuItem1.Text = "Spendings";
             this.spendingsToolStripMenuItem1.Click += new System.EventHandler(this.spendingsCategoryEditToolStripMenuItem_Click);
             // 
@@ -151,14 +155,16 @@
             // aboutToolStripMenuItem
             // 
             this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // taskToolStripMenuItem
             // 
             this.taskToolStripMenuItem.Name = "taskToolStripMenuItem";
-            this.taskToolStripMenuItem.Size = new System.Drawing.Size(118, 22);
+            this.taskToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.taskToolStripMenuItem.Text = "Task";
+            this.taskToolStripMenuItem.Click += new System.EventHandler(this.taskToolStripMenuItem_Click);
             // 
             // label1
             // 
@@ -246,6 +252,29 @@
             this.dataGridView_Earnings.Size = new System.Drawing.Size(893, 433);
             this.dataGridView_Earnings.TabIndex = 0;
             // 
+            // optionsToolStripMenuItem
+            // 
+            this.optionsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.statisticsToolStripMenuItem,
+            this.filterToolStripMenuItem});
+            this.optionsToolStripMenuItem.Name = "optionsToolStripMenuItem";
+            this.optionsToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.optionsToolStripMenuItem.Text = "Options";
+            // 
+            // statisticsToolStripMenuItem
+            // 
+            this.statisticsToolStripMenuItem.Name = "statisticsToolStripMenuItem";
+            this.statisticsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.statisticsToolStripMenuItem.Text = "Statistics";
+            this.statisticsToolStripMenuItem.Click += new System.EventHandler(this.statisticsToolStripMenuItem_Click);
+            // 
+            // filterToolStripMenuItem
+            // 
+            this.filterToolStripMenuItem.Name = "filterToolStripMenuItem";
+            this.filterToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.filterToolStripMenuItem.Text = "Filter";
+            this.filterToolStripMenuItem.Click += new System.EventHandler(this.filterToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -293,6 +322,9 @@
         private System.Windows.Forms.DataGridView dataGridView_Spendings;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.DataGridView dataGridView_Earnings;
+        private System.Windows.Forms.ToolStripMenuItem optionsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem statisticsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem filterToolStripMenuItem;
     }
 }
 

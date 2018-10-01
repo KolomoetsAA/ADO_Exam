@@ -15,11 +15,11 @@ namespace MyBudget
         {
             ////инициализаторы для режима работы entity  
             ////создает новую базу всегда
-            //Database.SetInitializer<MyBudgetContext>(new DropCreateDatabaseAlways<MyBudgetContext>());
+            Database.SetInitializer<MyBudgetContext>(new DropCreateDatabaseAlways<MyBudgetContext>());
             ////создает биби если она изменилась
             //Database.SetInitializer<MyBudgetContext>(new DropCreateDatabaseIfModelChanges<MyBudgetContext>());
             ////создает биби если ее нет
-            Database.SetInitializer<MyBudgetContext>(new CreateDatabaseIfNotExists<MyBudgetContext>());
+            //Database.SetInitializer<MyBudgetContext>(new CreateDatabaseIfNotExists<MyBudgetContext>());
         }
 
         public DbSet<EarningsCategory> EarningsCategories { get; set; }
